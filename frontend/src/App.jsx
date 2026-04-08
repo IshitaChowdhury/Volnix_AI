@@ -213,7 +213,7 @@ function App() {
                 <button className="primary-btn" type="button" onClick={() => setPage("ngo")}>
                   NGO Panel
                 </button>
-                <button className="secondary-btn" type="button" onClick={() => setPage("volunteer")}>
+                <button className="primary-btn" type="button" onClick={() => setPage("volunteer")}>
                   Join as Volunteer
                 </button>
               </div>

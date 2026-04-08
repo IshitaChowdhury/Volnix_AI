@@ -1128,3 +1128,349 @@ textarea {
     padding: 24px 20px;
   }
 }
+
+/* Theme override: dark mint palette */
+:root {
+  --bg: #030406;
+  --bg-soft: #071017;
+  --surface: linear-gradient(165deg, rgba(9, 16, 24, 0.9), rgba(5, 9, 14, 0.86));
+  --surface-plain: rgba(7, 12, 18, 0.9);
+  --line: rgba(106, 255, 186, 0.24);
+  --text: #eef8f5;
+  --muted: #a8b8b3;
+  --primary: #39ff9f;
+  --primary-strong: #12e67f;
+  --teal: #7dffd2;
+  --danger: #ff6b6b;
+  --warning: #ffbf57;
+  --success: #2dd4bf;
+}
+
+body {
+  background:
+    radial-gradient(circle at 12% 18%, rgba(57, 255, 159, 0.28), transparent 30%),
+    radial-gradient(circle at 88% 20%, rgba(125, 255, 210, 0.18), transparent 26%),
+    radial-gradient(circle at 72% 82%, rgba(6, 12, 18, 0.98), transparent 34%),
+    linear-gradient(180deg, #020304 0%, #040608 54%, #06090b 100%);
+  color: var(--text);
+}
+
+.navbar {
+  border-color: rgba(106, 255, 186, 0.34);
+  background:
+    linear-gradient(180deg, rgba(7, 24, 19, 0.74), rgba(3, 9, 11, 0.78));
+  box-shadow: 0 10px 30px rgba(57, 255, 159, 0.14), 0 0 0 1px rgba(106, 255, 186, 0.12) inset;
+}
+
+.logo {
+  color: #d9ffe9;
+  text-shadow: 0 0 14px rgba(57, 255, 159, 0.28);
+}
+
+.logo:hover {
+  color: #b8ffd9;
+}
+
+.nav-links button,
+.footer button,
+.ghost-btn {
+  color: rgba(238, 248, 245, 0.82);
+}
+
+.nav-links button:hover,
+.footer button:hover,
+.ghost-btn:hover {
+  background: rgba(57, 255, 159, 0.18);
+}
+
+.nav-links button {
+  border: 1px solid transparent;
+}
+
+.nav-links button:hover {
+  border-color: rgba(106, 255, 186, 0.3);
+  box-shadow: 0 0 0 1px rgba(57, 255, 159, 0.08) inset;
+}
+
+.primary-btn {
+  background: linear-gradient(135deg, #eefff7 0%, #39ff9f 48%, #12e67f 100%);
+  color: #03110d;
+}
+
+.primary-btn:hover {
+  box-shadow: 0 12px 34px rgba(57, 255, 159, 0.42);
+}
+
+.secondary-btn {
+  color: #eff8f5;
+  border-color: rgba(106, 255, 186, 0.34);
+  background: rgba(7, 12, 18, 0.78);
+}
+
+.secondary-btn:hover {
+  background: rgba(10, 18, 25, 0.92);
+}
+
+.hero-section,
+.section-card,
+.stat-card,
+.footer {
+  border-color: rgba(120, 255, 221, 0.14);
+  background: linear-gradient(165deg, rgba(9, 16, 24, 0.9), rgba(5, 9, 14, 0.88));
+}
+
+.hero-showcase {
+  background:
+    radial-gradient(circle at 18% 16%, rgba(57, 255, 159, 0.42), transparent 28%),
+    radial-gradient(circle at 82% 14%, rgba(125, 255, 210, 0.24), transparent 24%),
+    linear-gradient(180deg, rgba(12, 20, 24, 0.98) 0%, rgba(5, 8, 11, 0.98) 54%, rgba(3, 5, 7, 0.99) 100%);
+  border-color: rgba(106, 255, 186, 0.26);
+}
+
+.hero-showcase .shape {
+  border-color: rgba(154, 255, 230, 0.24);
+  background: linear-gradient(180deg, rgba(210, 255, 240, 0.28), rgba(25, 240, 176, 0.16));
+}
+
+.hero-pill {
+  background: rgba(57, 255, 159, 0.16);
+  color: #c7ffe3;
+  border-color: rgba(106, 255, 186, 0.34);
+}
+
+.hero-pill::before {
+  background: #8dffca;
+  box-shadow: 0 0 14px rgba(141, 255, 202, 0.9);
+}
+
+.hero-brand {
+  background: linear-gradient(120deg, #ffffff 0%, #dbffe7 42%, #78f3b2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-section p,
+.features-hero .section-subtitle,
+.problem-card p,
+.split-aside p,
+.footer-tagline,
+.history-item p,
+.footer-credits p,
+.section-card p,
+.why-grid li {
+  color: rgba(238, 248, 245, 0.72);
+}
+
+.hero-showcase .hero-pill {
+  background: rgba(57, 255, 159, 0.2);
+  border-color: rgba(106, 255, 186, 0.4);
+}
+
+.features-hero {
+  background:
+    radial-gradient(circle at 16% 22%, rgba(57, 255, 159, 0.24), transparent 28%),
+    linear-gradient(180deg, rgba(8, 13, 18, 0.98) 0%, rgba(5, 8, 12, 0.98) 100%);
+  border-color: rgba(106, 255, 186, 0.22);
+}
+
+.features-hero::before {
+  background: radial-gradient(ellipse 60% 40% at 50% 65%, rgba(57, 255, 159, 0.24), transparent);
+}
+
+.features-hero h2,
+.section-card h2,
+.section-card h3,
+.flow-page > .section-card h2,
+.result-layout .section-card h3,
+.history-card h3,
+.split-aside h2,
+.split-form-panel h3 {
+  color: #f5fffb;
+}
+
+.features-hero .section-subtitle {
+  color: rgba(238, 248, 245, 0.68);
+}
+
+.features-problems,
+.split-page {
+  border-color: rgba(120, 255, 221, 0.14);
+}
+
+.problem-card {
+  background: rgba(6, 10, 15, 0.9);
+  border-color: rgba(120, 255, 221, 0.1);
+}
+
+.problem-card::before {
+  background: linear-gradient(90deg, #39ff9f, #7dffd2);
+}
+
+.problem-card::after {
+  background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(25, 240, 176, 0.12), transparent);
+}
+
+.problem-card:hover {
+  background: rgba(8, 14, 20, 0.96);
+}
+
+.problem-card .card-icon,
+.problem-card .step-number,
+.split-icon {
+  background: rgba(25, 240, 176, 0.1);
+  border-color: rgba(120, 255, 221, 0.18);
+  color: #d8fff4;
+}
+
+.split-aside {
+  background: linear-gradient(160deg, rgba(3, 7, 11, 0.98) 0%, rgba(6, 13, 18, 0.96) 42%, rgba(10, 30, 26, 0.9) 100%);
+  border-color: rgba(120, 255, 221, 0.1);
+}
+
+.split-aside::before {
+  background-image: radial-gradient(rgba(120, 255, 221, 0.06) 1px, transparent 1px);
+}
+
+.split-aside::after {
+  background: radial-gradient(circle, rgba(57, 255, 159, 0.26), transparent 70%);
+}
+
+.split-aside--ngo::after {
+  background: radial-gradient(circle, rgba(100, 245, 215, 0.14), transparent 70%);
+}
+
+.back-pill {
+  border-color: rgba(120, 255, 221, 0.2);
+  background: rgba(25, 240, 176, 0.08);
+  color: #baffec;
+}
+
+.back-pill:hover {
+  background: rgba(57, 255, 159, 0.22);
+  border-color: rgba(106, 255, 186, 0.46);
+  color: #e5fff8;
+}
+
+.split-form-panel {
+  background: rgba(5, 9, 14, 0.96);
+}
+
+label,
+.split-perks li,
+.process-step,
+.history-item p,
+.footer-links-label,
+.footer button,
+.divider,
+.status-banner,
+.badge {
+  color: rgba(238, 248, 245, 0.82);
+}
+
+input,
+select,
+textarea {
+  border-color: rgba(120, 255, 221, 0.14);
+  background: rgba(6, 10, 15, 0.92);
+  color: #f6fffc;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: rgba(238, 248, 245, 0.4);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: rgba(57, 255, 159, 0.92);
+  box-shadow: 0 0 0 4px rgba(57, 255, 159, 0.22);
+}
+
+.split-form-panel h3,
+.flow-page > .section-card h2,
+.history-card h3,
+.result-layout .section-card h3,
+.split-aside h2 {
+  background: linear-gradient(120deg, #ffffff 0%, #d8fff4 42%, #86f2d0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.process-screen,
+.result-layout .section-card,
+.history-card {
+  border-color: rgba(120, 255, 221, 0.14);
+  background: linear-gradient(165deg, rgba(8, 14, 20, 0.92), rgba(5, 9, 14, 0.95));
+}
+
+.process-screen .dot {
+  background: #355f54;
+}
+
+.process-step.active {
+  color: #f0fffb;
+}
+
+.process-step.active .dot {
+  background: #7dffd2;
+  box-shadow: 0 0 0 6px rgba(57, 255, 159, 0.28);
+}
+
+.badge {
+  background: #5a6670;
+}
+
+.badge.high {
+  background: var(--danger);
+}
+
+.badge.medium {
+  background: var(--warning);
+  color: #08110f;
+}
+
+.badge.low {
+  background: var(--success);
+  color: #061310;
+}
+
+.history-item {
+  background: rgba(6, 10, 15, 0.9);
+  border-color: rgba(120, 255, 221, 0.12);
+}
+
+.status-banner {
+  border-color: rgba(120, 255, 221, 0.24);
+  background: rgba(5, 16, 14, 0.92);
+}
+
+.footer {
+  border-color: rgba(120, 255, 221, 0.14);
+  background: linear-gradient(165deg, rgba(8, 14, 20, 0.92), rgba(5, 9, 14, 0.96));
+}
+
+.footer-top,
+.footer-credits {
+  border-color: rgba(120, 255, 221, 0.1);
+}
+
+.footer-top h3 {
+  color: #f5fffb;
+}
+
+.footer button:hover {
+  color: #dffef4;
+}
+
+@media (max-width: 980px) {
+  .hero-section,
+  .features-hero,
+  .spotlight-strip,
+  .split-aside,
+  .split-form-panel {
+    background: linear-gradient(165deg, rgba(8, 14, 20, 0.95), rgba(5, 9, 14, 0.98));
+  }
+}
