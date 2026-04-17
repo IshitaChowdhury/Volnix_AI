@@ -116,6 +116,10 @@ app.post("/assign", async (req, res) => {
   });
 });
 
-app.listen(PORT, () => {
-  console.log(`Volnix AI backend running on http://localhost:${PORT}`);
-});
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.log(`Volnix AI backend running on http://localhost:${PORT}`);
+  });
+}
+
+module.exports = app;
